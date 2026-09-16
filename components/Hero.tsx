@@ -36,10 +36,14 @@ export default function Hero() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
+          <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
             <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
             Agence de location — Rabat, Maroc
           </div>
+
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-widest text-white mb-4">
+            FANCHA CAR&apos;S
+          </h2>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
             Louez votre voiture<br />
