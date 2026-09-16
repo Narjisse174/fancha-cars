@@ -20,6 +20,10 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     siteName: "FANCHA CAR'S",
   },
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
   robots: {
     index: true,
     follow: true,
