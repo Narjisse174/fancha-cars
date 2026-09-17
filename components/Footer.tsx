@@ -86,7 +86,7 @@ export default function Footer() {
                 <Phone size={16} className="text-blue-400 flex-shrink-0" />
                 <a
                   href="tel:+212660391020"
-                  className="text-slate-400 hover:text-blue-400 transition-colors text-sm"
+                  className="text-slate-400 hover:text-blue-400 transition-colors text-sm font-semibold underline underline-offset-2"
                 >
                   +212 6 60 39 10 20
                 </a>

@@ -97,6 +97,13 @@ export default function ContactPage() {
             {/* Action buttons */}
             <div className="flex flex-col gap-3">
               <a
+                href="tel:+212660391020"
+                className="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-2xl transition-all duration-200 hover:shadow-xl hover:shadow-blue-500/20"
+              >
+                <Phone size={22} />
+                Appeler le +212 6 60 39 10 20
+              </a>
+              <a
                 href="https://wa.me/212660391020?text=Bonjour%20FANCHA%20CAR'S%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20v%C3%A9hicules."
                 target="_blank"
                 rel="noopener noreferrer"
