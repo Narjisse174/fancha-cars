@@ -75,14 +75,17 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white p-2"
-            aria-label="Menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile: language + hamburger */}
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white p-2"
+              aria-label="Menu"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -100,7 +103,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-3 pb-1 flex flex-col gap-2">
+            <div className="pt-3 pb-1">
               <Link
                 href="/booking"
                 onClick={() => setIsOpen(false)}
@@ -109,9 +112,6 @@ export default function Navbar() {
                 Réserver maintenant
                 <ChevronRight size={16} />
               </Link>
-              <div className="flex justify-center">
-                <LanguageSwitcher />
-              </div>
             </div>
           </div>
         </div>
