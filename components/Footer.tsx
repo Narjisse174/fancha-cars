@@ -107,6 +107,9 @@ export default function Footer() {
             <Link href="/conditions" className="text-slate-500 hover:text-blue-400 transition-colors text-xs">
               Conditions de location
             </Link>
+            <Link href="/politique-de-confidentialite" className="text-slate-500 hover:text-blue-400 transition-colors text-xs">
+              Politique de confidentialité
+            </Link>
             <Link href="/a-propos" className="text-slate-500 hover:text-blue-400 transition-colors text-xs">
               À propos
             </Link>
