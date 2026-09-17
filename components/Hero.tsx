@@ -16,7 +16,7 @@ export default function Hero() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+          style={{ backgroundImage: "url('/cars/hero-bg.png')" }}
         />
         {/* Dark overlay + gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#05080f]/95 via-[#05080f]/80 to-blue-950/70" />
