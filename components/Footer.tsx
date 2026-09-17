@@ -15,8 +15,9 @@ function InstagramIcon({ size = 16 }: { size?: number }) {
 const navLinks = [
   { href: '/', label: 'Accueil' },
   { href: '/cars', label: 'Nos voitures' },
-  { href: '/conditions', label: 'Conditions' },
   { href: '/services', label: 'Services' },
+  { href: '/faq', label: 'FAQ' },
+  { href: '/conditions', label: 'Conditions' },
   { href: '/contact', label: 'Contact' },
 ];
 
