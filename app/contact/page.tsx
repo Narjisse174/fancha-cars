@@ -92,37 +92,37 @@ export default function ContactPage() {
             </div>
 
             {/* Action buttons */}
-            <div className="flex flex-col gap-2">
+            <div className="grid grid-cols-2 gap-2">
               <a
                 href="tel:+212660391020"
-                className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 text-sm rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/20"
+                className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 text-xs rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/20"
               >
-                <Phone size={17} />
-                Appeler le +212 6 60 39 10 20
+                <Phone size={15} />
+                Appeler
               </a>
               <a
                 href="https://wa.me/212660391020?text=Bonjour%20FANCHA%20CAR'S%2C%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20v%C3%A9hicules."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-semibold py-3 text-sm rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-green-500/20"
+                className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-semibold py-3 text-xs rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-green-500/20"
               >
-                <MessageCircle size={17} />
-                Nous contacter sur WhatsApp
+                <MessageCircle size={15} />
+                WhatsApp
               </a>
               <a
                 href="https://www.instagram.com/fancha_cars"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-500 hover:to-pink-400 text-white font-semibold py-3 text-sm rounded-xl transition-all duration-200"
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-500 hover:to-pink-400 text-white font-semibold py-3 text-xs rounded-xl transition-all duration-200"
               >
-                <InstagramIcon size={17} />
-                Nous suivre sur Instagram
+                <InstagramIcon size={15} />
+                Instagram
               </a>
               <Link
                 href="/booking"
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold py-3 text-sm rounded-xl transition-all duration-200"
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold py-3 text-xs rounded-xl transition-all duration-200"
               >
-                Réserver un véhicule
+                Réserver
               </Link>
             </div>
           </div>
