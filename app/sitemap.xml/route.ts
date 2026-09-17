@@ -1,8 +1,8 @@
 import { cars } from '@/data/cars';
 
 export function GET() {
-  const baseUrl = 'https://fanchacars.ma';
-  const staticRoutes = ['', '/cars', '/booking', '/conditions', '/services', '/contact', '/a-propos'];
+  const baseUrl = 'https://fancha-cars.vercel.app';
+  const staticRoutes = ['', '/cars', '/booking', '/conditions', '/services', '/contact', '/a-propos', '/faq'];
 
   const urls = [
     ...staticRoutes.map(
