@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X, ChevronRight } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const navLinks = [
   { href: '/', label: 'Accueil' },
@@ -62,8 +63,9 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA + Language */}
+          <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher />
             <Link
               href="/booking"
               className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold px-5 py-2.5 rounded-full text-sm transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25"
@@ -98,7 +100,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-3 pb-1">
+            <div className="pt-3 pb-1 flex flex-col gap-2">
               <Link
                 href="/booking"
                 onClick={() => setIsOpen(false)}
@@ -107,6 +109,9 @@ export default function Navbar() {
                 Réserver maintenant
                 <ChevronRight size={16} />
               </Link>
+              <div className="flex justify-center">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         </div>
