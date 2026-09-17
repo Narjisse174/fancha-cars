@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
+import Link from 'next/link';
+import SectionTitle from '@/components/SectionTitle';
 
 function InstagramIcon({ size = 18 }: { size?: number }) {
   return (
@@ -10,8 +12,6 @@ function InstagramIcon({ size = 18 }: { size?: number }) {
     </svg>
   );
 }
-import Link from 'next/link';
-import SectionTitle from '@/components/SectionTitle';
 
 export const metadata: Metadata = {
   title: "Contact | FANCHA CAR'S",
@@ -58,10 +58,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">WhatsApp / Téléphone</p>
-                    <a
-                      href="tel:+212660391020"
-                      className="text-slate-700 text-sm hover:text-blue-500 transition-colors font-medium"
-                    >
+                    <a href="tel:+212660391020" className="text-slate-700 text-sm hover:text-blue-500 transition-colors font-medium">
                       +212 6 60 39 10 20
                     </a>
                   </div>
@@ -123,45 +120,40 @@ export default function ContactPage() {
               </a>
               <Link
                 href="/booking"
-                className="flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-500 text-slate-950 font-bold py-4 rounded-2xl transition-all duration-200"
+                className="flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-4 rounded-2xl transition-all duration-200"
               >
                 Réserver un véhicule
               </Link>
             </div>
           </div>
 
-          {/* Map placeholder */}
+          {/* Google Maps */}
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
             <div className="p-5 border-b border-slate-200">
               <h3 className="font-bold text-slate-900">Notre emplacement</h3>
               <p className="text-slate-500 text-sm mt-1">Agdal, Rabat</p>
             </div>
-            {/* Google Maps embed placeholder */}
-            <div className="relative h-80 bg-slate-100 flex items-center justify-center">
-              <div className="text-center p-6">
-                <MapPin size={40} className="text-blue-500 mx-auto mb-3" />
-                <p className="text-slate-700 font-semibold mb-1">N°48, Avenue Fal Ould Oumeir</p>
-                <p className="text-slate-500 text-sm mb-4">Agdal, Rabat, Maroc</p>
-                <a
-                  href="https://maps.google.com/?q=Avenue+Fal+Ould+Oumeir+Agdal+Rabat+Maroc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
-                >
-                  Ouvrir dans Google Maps
-                </a>
-              </div>
-              {/* Uncomment and replace with your embed URL when ready:
+            <div className="relative h-96">
               <iframe
-                src="https://www.google.com/maps/embed?pb=..."
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0!2d-6.8498!3d33.9909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b8717b4b0b3%3A0x0!2sAvenue+Fal+Ould+Oumeir%2C+Agdal%2C+Rabat!5e0!3m2!1sfr!2sma!4v1"
                 width="100%"
                 height="100%"
-                style={{ border: 0, position: 'absolute', inset: 0 }}
+                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
-              */}
+            </div>
+            <div className="p-4 border-t border-slate-100">
+              <a
+                href="https://maps.google.com/?q=Avenue+Fal+Ould+Oumeir+Agdal+Rabat+Maroc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold py-3 rounded-xl transition-colors"
+              >
+                <MapPin size={16} />
+                Ouvrir dans Google Maps
+              </a>
             </div>
           </div>
         </div>
