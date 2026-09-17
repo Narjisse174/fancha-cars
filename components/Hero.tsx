@@ -44,11 +44,11 @@ export default function Hero() {
             Agence de location — Rabat, Maroc
           </div>
 
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-widest text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-widest text-white mb-4 whitespace-nowrap">
             FANCHA CAR&apos;S
           </h2>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Louez votre voiture<br />
             <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
               à Rabat
