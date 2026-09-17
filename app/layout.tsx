@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import CallButton from '@/components/CallButton';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -19,6 +20,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     siteName: "FANCHA CAR'S",
+    images: [{ url: '/logo.png', width: 1200, height: 630, alt: "FANCHA CAR'S" }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Location de voiture Rabat | FANCHA CAR'S",
+    description: "Location de voitures à Rabat avec FANCHA CAR'S. Véhicules récents 2026, kilométrage illimité.",
+    images: ['/logo.png'],
   },
   icons: {
     icon: '/logo.png',
@@ -38,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <CallButton />
       </body>
     </html>
   );

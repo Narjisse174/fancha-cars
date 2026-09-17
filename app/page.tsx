@@ -6,6 +6,7 @@ import SectionTitle from '@/components/SectionTitle';
 import FeatureCard from '@/components/FeatureCard';
 import ServiceCard from '@/components/ServiceCard';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import Testimonials from '@/components/Testimonials';
 import { cars } from '@/data/cars';
 
 const features = [
@@ -99,6 +100,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       {/* CTA */}
       <section className="py-20 relative overflow-hidden bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700">
