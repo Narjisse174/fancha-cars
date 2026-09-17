@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
-import CarGrid from '@/components/CarGrid';
 import SectionTitle from '@/components/SectionTitle';
-import { cars } from '@/data/cars';
+import CarsFilter from '@/components/CarsFilter';
 
 export const metadata: Metadata = {
   title: "Nos voitures | FANCHA CAR'S",
@@ -23,9 +22,9 @@ export default function CarsPage() {
         </div>
       </div>
 
-      {/* Cars grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <CarGrid cars={cars} />
+      {/* Filter + Grid */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <CarsFilter />
       </div>
     </div>
   );
